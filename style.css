@@ -11,7 +11,7 @@ AUTHOR URI: <a href="http://hadto.net">http://hadto.net</a>
 @import url('blueprint/screen.css');
 
 div#container,div#primary {margin-top:1em; width: 700px;}
-#header { height: 3em;padding-top: 0.2em;margin-bottom: 2.5em; border-bottom: 1px solid #ccc; }
+#header { height: 3em;padding-top: 0.2em;margin-bottom: 3.5em; border-bottom: 1px solid #ccc; }
 #blog-title{font-size:2em;}
 #hedNav{padding-top: 1.2em}
 #footer {padding-top: 0.2em;padding-bottom: 0.2em;margin-top:1.5em; border-top:1px solid #ccc;}
@@ -21,7 +21,9 @@ a:link {color:#666;text-decoration:none;background:none;font-style: normal;font-
 a:visited {color:#666;text-decoration:none;background:none;font-style: normal;font-weight: normal;}
 a:hover {color:#000;font-style: normal;font-weight: normal;background:#ddd;}
 a.button {display: block;	text-indent: -9999px;}
-a#hadto-logo {background: url(hadto.png);height: 40px;width: 197px;}
+a#hadto-logo {background: url(hadto.png);height: 61px;width: 225px;}
 a.accToggler{color:#666;cursor: pointer;}
 
 .contacterror{ background-color: #ffbfbf; border-width: 1px; border-color: #ff3232; border-style: outset; }
+
+

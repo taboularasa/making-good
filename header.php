@@ -9,7 +9,12 @@
 	<!--[if IE]><link rel="stylesheet" href="<?php bloginfo("template_directory"); ?>/blueprint/ie.css" type="text/css" media="screen, projection" /><![endif]-->
 	<!-- this is the link to the SandBox CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url') ?>" />
+	
+	
 	<script src="/mint/?js" type="text/javascript"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/js/jquery.imgbox.pack.js"></script>
+	<script type="text/javascript" src="<?php bloginfo("template_directory"); ?>/js/hadto.js"></script>
 	
 <?php wp_head() // For plugins ?>
 

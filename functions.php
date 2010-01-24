@@ -504,4 +504,10 @@ add_filter( 'archive_meta', 'convert_chars' );
 add_filter( 'archive_meta', 'wpautop' );
 
 // Remember: the Sandbox is for play.
+
+//add thumbnail support
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 50, 50, true ); // 50 pixels wide by 50 pixels tall, hard crop mode
+add_image_size( 'single-post-thumbnail', 400, 9999 ); // Permalink thumbnail size
+add_image_size( 'slider-post-thumbnail', 640, 480, true ); // Front page slider thumbnail size
 ?>
