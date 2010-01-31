@@ -8,7 +8,7 @@
 				<div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div>
 			</div>
 
-<?php while ( have_posts() ) : the_post() ?><!-- the loop starts here -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?><!-- the loop starts here -->
 
 			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
 				<h2 class="entry-title"><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'sandbox'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a></h2>
@@ -28,7 +28,9 @@
 
 <?php comments_template() ?>
 
-<?php endwhile; ?><!-- the loop ends here -->
+<?php endwhile; else: ?>
+<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif; ?><!-- the loop ends here -->
 
 
 		</div><!-- #content -->

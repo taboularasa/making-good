@@ -11,6 +11,12 @@
 
 ----------------------------------------------------------------------- */
 
+@font-face {
+	font-family: 'TypoSlabserif-LightRegular';
+	src: url('TypoSlabserif-Light.eot');
+	src: local('TypoSlabserif-Light Regular'), local('TypoSlabserif-Light'), url('TypoSlabserif-Light.woff') format('woff'), url('TypoSlabserif-Light.ttf') format('truetype'), url('TypoSlabserif-Light.svg#TypoSlabserif-Light') format('svg');
+}
+
 /* reset.css */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
 body {line-height:1.5;}
@@ -23,7 +29,7 @@ a img {border:none;}
 
 /* typography.css */
 /*body { font-family: Georgia, Palatino Linotype, "Times New Roman", Times, serif ; font-size:75%;color:#222;background:#fff;}*/
-body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+body {font-size:75%;color:#222;background:#fff;font-family: "TypoSlabserif-LightRegular","Helvetica Neue", Arial, Helvetica, sans-serif;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
 h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
 h2 {font-size:2em;margin-bottom:0.75em;}
@@ -33,7 +39,7 @@ h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
 h6 {font-size:1em;font-weight:bold;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 p {margin:0 0 1.5em;}
-p img {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+/*p img {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}*/
 p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
 a:focus, a:hover {color:#000;}
 a {color:#009;text-decoration:underline;}

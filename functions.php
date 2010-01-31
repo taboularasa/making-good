@@ -507,7 +507,17 @@ add_filter( 'archive_meta', 'wpautop' );
 
 //add thumbnail support
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 50, 50, true ); // 50 pixels wide by 50 pixels tall, hard crop mode
-add_image_size( 'single-post-thumbnail', 400, 9999 ); // Permalink thumbnail size
+set_post_thumbnail_size( 213, 213, true ); // 50 pixels wide by 50 pixels tall, hard crop mode
+add_image_size( 'single-post-thumbnail', 680, 9999 ); // Permalink thumbnail size
 add_image_size( 'slider-post-thumbnail', 640, 480, true ); // Front page slider thumbnail size
+
+// add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
+// 
+// function my_post_image_html( $html, $post_id, $post_image_id ) {
+// 
+// 	$html = '<a class="post-thumbnail" href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_post_field( 'post_title', $post_id ) ) . '">' .  $html  . the_excerpt() .'</a>';
+// 
+// 	return $html;
+// }
+
 ?>
